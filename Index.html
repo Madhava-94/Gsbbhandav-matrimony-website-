@@ -1,0 +1,1825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GSB Bandhav | 100% Free Lifetime GSB Konkani Matrimony</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Rozha+One&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#fff7ed',
+              100: '#ffedd5',
+              200: '#fed7aa',
+              500: '#f97316',
+              700: '#c2410c',
+              800: '#9a3412',
+              900: '#7c2d12',
+              gold: '#D4AF37',
+              maroon: '#800020',
+              templeRed: '#B91C1C',
+              sandal: '#FDF6E2',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Rozha One"', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar and Subtle Traditional Motif */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #faf5eb;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #e2c08d;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #c2995b;
+    }
+    .rangoli-pattern {
+      background-color: #fffaf0;
+      background-image: radial-gradient(#d4af37 0.75px, transparent 0.75px), radial-gradient(#d4af37 0.75px, #fffaf0 0.75px);
+      background-size: 30px 30px;
+      background-position: 0 0, 15px 15px;
+      background-opacity: 0.15;
+    }
+  </style>
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans antialiased min-h-screen flex flex-col selection:bg-amber-200 selection:text-amber-900">
+
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-amber-100">
+    <div class="bg-gradient-to-r from-brand-maroon via-brand-templeRed to-brand-800 text-white text-xs sm:text-sm py-1.5 px-4 text-center font-medium tracking-wide flex items-center justify-center gap-2">
+      <span class="inline-block animate-pulse">🪔</span>
+      <span>100% Free Lifetime Community Matrimony • No Fees • No Hidden Charges • Pure Seva</span>
+      <span class="hidden md:inline bg-amber-400/20 text-amber-200 text-[11px] px-2 py-0.5 rounded-full border border-amber-300/30">6-Month Auto-Renewal</span>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo -->
+        <div class="flex items-center gap-3 cursor-pointer" onclick="switchTab('home')">
+          <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-brand-maroon to-amber-500 p-0.5 shadow-md flex items-center justify-center">
+            <div class="w-full h-full bg-amber-50 rounded-full flex items-center justify-center text-brand-maroon text-2xl font-bold font-serif">
+              ॐ
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center gap-1.5">
+              <span class="text-2xl font-extrabold text-stone-900 tracking-tight font-serif">GSB Bandhav</span>
+              <span class="bg-red-100 text-brand-maroon font-bold text-[10px] uppercase px-1.5 py-0.5 rounded tracking-wider border border-red-200">Konkani</span>
+            </div>
+            <p class="text-xs text-stone-500 font-medium tracking-tight">Connecting GSB Families Globally with Dignity & Trust</p>
+          </div>
+        </div>
+
+        <!-- Desktop Navigation Items -->
+        <nav class="hidden md:flex items-center gap-1 lg:gap-2">
+          <button onclick="switchTab('home')" class="nav-btn active-nav px-3.5 py-2 rounded-lg text-sm font-semibold transition" data-target="home">
+            <i class="fa-solid fa-house-chimney text-amber-600 mr-1.5"></i> Home
+          </button>
+          <button onclick="switchTab('browse')" class="nav-btn px-3.5 py-2 rounded-lg text-sm font-semibold text-stone-600 hover:text-stone-900 transition" data-target="browse">
+            <i class="fa-solid fa-users text-amber-600 mr-1.5"></i> Browse Profiles
+          </button>
+          <button onclick="switchTab('dashboard')" class="nav-btn px-3.5 py-2 rounded-lg text-sm font-semibold text-stone-600 hover:text-stone-900 transition" data-target="dashboard">
+            <i class="fa-solid fa-sparkles text-amber-600 mr-1.5"></i> My Matches & Requests
+            <span id="requestsCountBadge" class="ml-1.5 bg-brand-maroon text-white text-xs px-1.5 py-0.2 rounded-full font-bold">2</span>
+          </button>
+          <button onclick="openRegisterModal()" class="ml-2 bg-gradient-to-r from-amber-600 to-brand-maroon hover:from-amber-700 hover:to-red-900 text-white font-semibold text-sm px-4 py-2.5 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 flex items-center gap-2">
+            <i class="fa-solid fa-user-plus"></i> Register Free
+          </button>
+        </nav>
+
+        <!-- Mobile Menu Hamburger -->
+        <div class="flex md:hidden items-center gap-2">
+          <button onclick="openRegisterModal()" class="bg-brand-maroon text-white text-xs font-semibold px-3 py-2 rounded-lg shadow">
+            Register Free
+          </button>
+          <button onclick="toggleMobileMenu()" class="p-2 rounded-lg text-stone-700 hover:bg-stone-100 focus:outline-none">
+            <i class="fa-solid fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-amber-100 bg-white px-4 pt-2 pb-4 space-y-1 shadow-lg">
+      <button onclick="switchTab('home'); toggleMobileMenu()" class="w-full text-left px-3 py-2 rounded-md font-medium text-stone-700 hover:bg-amber-50">
+        <i class="fa-solid fa-house-chimney text-amber-600 w-6"></i> Home
+      </button>
+      <button onclick="switchTab('browse'); toggleMobileMenu()" class="w-full text-left px-3 py-2 rounded-md font-medium text-stone-700 hover:bg-amber-50">
+        <i class="fa-solid fa-users text-amber-600 w-6"></i> Browse Profiles
+      </button>
+      <button onclick="switchTab('dashboard'); toggleMobileMenu()" class="w-full text-left px-3 py-2 rounded-md font-medium text-stone-700 hover:bg-amber-50">
+        <i class="fa-solid fa-heart text-amber-600 w-6"></i> My Matches & Requests
+      </button>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+
+    <!-- ============================================== -->
+    <!-- VIEW 1: HOME PAGE                             -->
+    <!-- ============================================== -->
+    <section id="view-home" class="view-panel block">
+      
+      <!-- Hero Banner -->
+      <div class="relative overflow-hidden bg-gradient-to-b from-amber-50/80 via-white to-stone-50 py-12 md:py-16 border-b border-amber-100 rangoli-pattern">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            
+            <!-- Left Hero Text -->
+            <div class="lg:col-span-7 space-y-6">
+              <div class="inline-flex items-center gap-2 bg-amber-100/90 border border-amber-300 text-brand-maroon font-bold text-xs px-3.5 py-1.5 rounded-full shadow-sm">
+                <i class="fa-solid fa-bell text-amber-600"></i> Modern Platform for Gowd Saraswat Brahmin Youth
+              </div>
+              <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-stone-900 leading-tight">
+                Find Your Ideal Soulmate within the <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-templeRed to-amber-600 font-serif">GSB Konkani</span> Community
+              </h1>
+              <p class="text-base sm:text-lg text-stone-600 font-normal leading-relaxed">
+                A non-commercial, completely <strong class="text-stone-800">100% Free Lifetime portal</strong> built to unite Saraswat families across Mangalore, Udupi, Goa, Kochi, Mumbai, and worldwide. Privacy guaranteed with Google Photos integration & phone masking.
+              </p>
+
+              <!-- Quick Feature Badges -->
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
+                <div class="flex items-center gap-2 bg-white p-2.5 rounded-xl border border-stone-200/80 shadow-xs">
+                  <div class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center font-bold text-sm">
+                    <i class="fa-solid fa-gift"></i>
+                  </div>
+                  <div>
+                    <div class="text-xs font-bold text-stone-900">Life-time Free</div>
+                    <div class="text-[11px] text-stone-500">₹0 Membership</div>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2 bg-white p-2.5 rounded-xl border border-stone-200/80 shadow-xs">
+                  <div class="w-8 h-8 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center font-bold text-sm">
+                    <i class="fa-brands fa-google"></i>
+                  </div>
+                  <div>
+                    <div class="text-xs font-bold text-stone-900">Google Photos</div>
+                    <div class="text-[11px] text-stone-500">Secure link share</div>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2 bg-white p-2.5 rounded-xl border border-stone-200/80 shadow-xs col-span-2 sm:col-span-1">
+                  <div class="w-8 h-8 rounded-lg bg-amber-50 text-amber-700 flex items-center justify-center font-bold text-sm">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                  </div>
+                  <div>
+                    <div class="text-xs font-bold text-stone-900">6-Mo. Expiry</div>
+                    <div class="text-[11px] text-stone-500">Fresh profiles only</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Action Callouts -->
+              <div class="flex flex-wrap items-center gap-3 pt-2">
+                <button onclick="openRegisterModal()" class="bg-brand-maroon hover:bg-red-900 text-white font-semibold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transition flex items-center gap-2 text-sm sm:text-base">
+                  <span>Create Free Profile</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <button onclick="switchTab('browse')" class="bg-white hover:bg-stone-50 text-stone-800 font-semibold px-6 py-3.5 rounded-xl border border-stone-300 shadow-sm transition text-sm sm:text-base">
+                  Explore Profiles
+                </button>
+              </div>
+            </div>
+
+            <div class="lg:col-span-5">
+              <div class="bg-white p-6 sm:p-7 rounded-2xl shadow-xl border border-amber-200 relative">
+                <div class="absolute -top-3 right-6 bg-gradient-to-r from-amber-500 to-brand-maroon text-white text-[11px] font-bold px-3 py-0.5 rounded-full uppercase tracking-wider shadow">
+                  Quick Search
+                </div>
+
+                <div class="flex items-center gap-2 mb-4 border-b border-stone-100 pb-3">
+                  <div class="w-8 h-8 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </div>
+                  <h3 class="font-bold text-stone-900 text-lg">Find Your GSB Match</h3>
+                </div>
+
+                <form id="heroQuickSearchForm" onsubmit="handleQuickSearch(event)" class="space-y-4">
+                  <div>
+                    <label class="block text-xs font-semibold text-stone-700 mb-1">Looking for</label>
+                    <div class="grid grid-cols-2 gap-2">
+                      <label class="cursor-pointer border border-stone-200 rounded-lg p-2.5 flex items-center justify-center gap-2 text-sm font-medium hover:border-amber-400 bg-stone-50/50 has-[:checked]:bg-amber-50 has-[:checked]:border-brand-maroon has-[:checked]:text-brand-maroon">
+                        <input type="radio" name="quickGender" value="Bride" checked class="accent-brand-maroon">
+                        <span>GSB Bride (ವಧು)</span>
+                      </label>
+                      <label class="cursor-pointer border border-stone-200 rounded-lg p-2.5 flex items-center justify-center gap-2 text-sm font-medium hover:border-amber-400 bg-stone-50/50 has-[:checked]:bg-amber-50 has-[:checked]:border-brand-maroon has-[:checked]:text-brand-maroon">
+                        <input type="radio" name="quickGender" value="Groom" class="accent-brand-maroon">
+                        <span>GSB Groom (ವರ)</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="grid grid-cols-2 gap-3">
+                    <div>
+                      <label class="block text-xs font-semibold text-stone-700 mb-1">Age Between</label>
+                      <div class="flex items-center gap-1">
+                        <input type="number" id="quickAgeMin" value="23" min="20" max="60" class="w-full border border-stone-300 rounded-lg px-2.5 py-2 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+                        <span class="text-stone-400 text-xs">to</span>
+                        <input type="number" id="quickAgeMax" value="32" min="20" max="60" class="w-full border border-stone-300 rounded-lg px-2.5 py-2 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+                      </div>
+                    </div>
+                    <div>
+                      <label class="block text-xs font-semibold text-stone-700 mb-1">Gothra</label>
+                      <select id="quickGothra" class="w-full border border-stone-300 rounded-lg px-2.5 py-2 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none bg-white">
+                        <option value="All">All Gothras</option>
+                        <option value="Kashyapa">Kashyapa (ಕಶ್ಯಪ)</option>
+                        <option value="Bharadwaja">Bharadwaja (ಭಾರದ್ವಾಜ)</option>
+                        <option value="Kaushika">Kaushika (ಕೌಶಿಕ)</option>
+                        <option value="Vatsa">Vatsa (ವತ್ಸ)</option>
+                        <option value="Kaundinya">Kaundinya (ಕೌಂಡಿನ್ಯ)</option>
+                        <option value="Atri">Atri (ಅತ್ರಿ)</option>
+                        <option value="Jamadagni">Jamadagni (ಜಮದಗ್ನಿ)</option>
+                        <option value="Vishwamitra">Vishwamitra (ವಿಶ್ವಾಮಿತ್ರ)</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div>
+                    <label class="block text-xs font-semibold text-stone-700 mb-1">Native Region / City</label>
+                    <select id="quickLocation" class="w-full border border-stone-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none bg-white">
+                      <option value="All">All Locations (Karavali, Goa, Worldwide)</option>
+                      <option value="Mangaluru">Mangaluru / DK</option>
+                      <option value="Udupi">Udupi / Kundapura</option>
+                      <option value="Goa">Goa</option>
+                      <option value="Bengaluru">Bengaluru</option>
+                      <option value="Mumbai">Mumbai / Pune</option>
+                      <option value="Kochi">Kochi / Kerala</option>
+                      <option value="Overseas">Abroad / NRI</option>
+                    </select>
+                  </div>
+
+                  <button type="submit" class="w-full bg-gradient-to-r from-amber-600 to-brand-maroon hover:from-amber-700 hover:to-red-900 text-white font-bold py-3 rounded-xl shadow-md transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-search"></i>
+                    <span>Search Compatible Profiles</span>
+                  </button>
+                </form>
+
+                <p class="text-[11px] text-center text-stone-500 mt-3">
+                  <i class="fa-solid fa-shield-halved text-emerald-600 mr-1"></i> Respectful & verified profiles. No agents.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="py-14 bg-white border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center max-w-3xl mx-auto mb-10">
+            <span class="text-brand-maroon text-xs font-extrabold uppercase tracking-widest bg-red-50 border border-red-200 px-3 py-1 rounded-full">Pure Community Service</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-stone-900 mt-3 font-serif">Why GSB Bandhav is Unique</h2>
+            <p class="text-stone-600 text-sm sm:text-base mt-2">Designed specifically honoring Saraswat values, family privacy, and zero financial burden on parents.</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <!-- Box 1 -->
+            <div class="p-6 rounded-2xl bg-amber-50/60 border border-amber-200/80 hover:shadow-md transition">
+              <div class="w-12 h-12 rounded-xl bg-amber-500 text-white flex items-center justify-center text-xl mb-4 shadow">
+                <i class="fa-solid fa-hand-holding-heart"></i>
+              </div>
+              <h3 class="font-bold text-stone-900 text-base mb-1">100% Lifetime Free</h3>
+              <p class="text-xs text-stone-600 leading-relaxed">No premium subscriptions, no contact reveal fees, no middlemen commission. Completely free for all Saraswats.</p>
+            </div>
+
+            <!-- Box 2 -->
+            <div class="p-6 rounded-2xl bg-blue-50/60 border border-blue-200/80 hover:shadow-md transition">
+              <div class="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center text-xl mb-4 shadow">
+                <i class="fa-brands fa-google-drive"></i>
+              </div>
+              <h3 class="font-bold text-stone-900 text-base mb-1">Google Photos Link</h3>
+              <p class="text-xs text-stone-600 leading-relaxed">Don't want to upload images to public servers? Simply share a secure Google Photos/Drive view link with access controls.</p>
+            </div>
+
+            <!-- Box 3 -->
+            <div class="p-6 rounded-2xl bg-red-50/60 border border-red-200/80 hover:shadow-md transition">
+              <div class="w-12 h-12 rounded-xl bg-brand-maroon text-white flex items-center justify-center text-xl mb-4 shadow">
+                <i class="fa-solid fa-om"></i>
+              </div>
+              <h3 class="font-bold text-stone-900 text-base mb-1">GSB Gothra & Horoscope</h3>
+              <p class="text-xs text-stone-600 leading-relaxed">Specific fields for Kula Devata (Kuldev), Nakshatra, Rashi, Gothra, and warnings against same-Gothra alliances.</p>
+            </div>
+
+            <!-- Box 4 -->
+            <div class="p-6 rounded-2xl bg-emerald-50/60 border border-emerald-200/80 hover:shadow-md transition">
+              <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-xl mb-4 shadow">
+                <i class="fa-solid fa-hourglass-half"></i>
+              </div>
+              <h3 class="font-bold text-stone-900 text-base mb-1">6-Month Auto-Clean</h3>
+              <p class="text-xs text-stone-600 leading-relaxed">Profiles automatically expire after 6 months unless reconfirmed in 1 click. Zero ghost profiles or outdated contacts!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-14 bg-stone-100/70 border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col md:flex-row md:items-end justify-between mb-10">
+            <div>
+              <span class="text-xs font-bold text-amber-700 uppercase tracking-widest bg-amber-100 px-3 py-1 rounded-full">Blessed Unions</span>
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-stone-900 mt-2 font-serif">Happy GSB Couples (ಸಾಫಲ್ಯ ಕಥೆಗಳು)</h2>
+              <p class="text-stone-600 text-sm mt-1">Read how Saraswat youths met their soulmates without spending a single rupee.</p>
+            </div>
+            <button onclick="openRegisterModal()" class="mt-4 md:mt-0 text-sm font-semibold text-brand-maroon hover:underline flex items-center gap-1">
+              Start your journey today <i class="fa-solid fa-chevron-right text-xs"></i>
+            </button>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Story 1 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-200 hover:shadow-md transition">
+              <div class="flex items-center gap-4 mb-4">
+                <div class="w-14 h-14 rounded-full bg-amber-100 border-2 border-amber-400 flex items-center justify-center text-amber-800 text-xl font-serif font-bold shadow-inner">
+                  S & R
+                </div>
+                <div>
+                  <h4 class="font-bold text-stone-900">Sudarshan Shenoy & Rohini Pai</h4>
+                  <p class="text-xs text-stone-500">Mangaluru • Married Nov 2025</p>
+                </div>
+              </div>
+              <p class="text-xs text-stone-600 italic leading-relaxed">
+                "We loved that GSB Bandhav had our Kula Devata (Shree Shantadurga) and Nakshatra details clearly laid out. Contacting Rohini's family directly via WhatsApp saved months of traditional hunting!"
+              </p>
+            </div>
+
+            <!-- Story 2 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-200 hover:shadow-md transition">
+              <div class="flex items-center gap-4 mb-4">
+                <div class="w-14 h-14 rounded-full bg-red-100 border-2 border-red-300 flex items-center justify-center text-brand-maroon text-xl font-serif font-bold shadow-inner">
+                  V & A
+                </div>
+                <div>
+                  <h4 class="font-bold text-stone-900">Varun Prabhu & Archana Kamath</h4>
+                  <p class="text-xs text-stone-500">Goa & Bengaluru • Married Jan 2026</p>
+                </div>
+              </div>
+              <p class="text-xs text-stone-600 italic leading-relaxed">
+                "The Google Photos link feature was great for privacy. We didn't have to put open photos everywhere. And the website is truly 100% free as promised. Devu Borem Koru!"
+              </p>
+            </div>
+
+            <!-- Story 3 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-200 hover:shadow-md transition">
+              <div class="flex items-center gap-4 mb-4">
+                <div class="w-14 h-14 rounded-full bg-emerald-100 border-2 border-emerald-300 flex items-center justify-center text-emerald-800 text-xl font-serif font-bold shadow-inner">
+                  A & N
+                </div>
+                <div>
+                  <h4 class="font-bold text-stone-900">Abhishek Nayak & Neha Bhat</h4>
+                  <p class="text-xs text-stone-500">Udupi & Mumbai • Married Feb 2026</p>
+                </div>
+              </div>
+              <p class="text-xs text-stone-600 italic leading-relaxed">
+                "Other commercial matrimonies asked for ₹6,000 just to view mobile numbers. GSB Bandhav is a blessing for Saraswat parents who value straightforward, clean matrimony."
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-14 bg-gradient-to-r from-brand-maroon to-amber-700 text-white text-center">
+        <div class="max-w-4xl mx-auto px-4">
+          <h2 class="text-2xl sm:text-3xl font-extrabold font-serif mb-3">Begin Your Sacred Search with GSB Bandhav</h2>
+          <p class="text-amber-100 text-sm sm:text-base mb-6 max-w-2xl mx-auto">
+            Create your biodata in under 3 minutes. It takes zero money, keeps your contact safe, and helps your family find compatible Saraswat proposals.
+          </p>
+          <div class="flex flex-wrap items-center justify-center gap-3">
+            <button onclick="openRegisterModal()" class="bg-white text-brand-maroon hover:bg-amber-50 font-bold px-7 py-3 rounded-xl shadow-lg transition">
+              <i class="fa-solid fa-file-pen mr-2"></i> Register Your Biodata Free
+            </button>
+            <button onclick="switchTab('browse')" class="bg-amber-600/40 hover:bg-amber-600/60 border border-white/40 text-white font-semibold px-6 py-3 rounded-xl transition">
+              View Verified GSB Profiles
+            </button>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- VIEW 2: BROWSE & ADVANCED FILTER PAGE          -->
+    <!-- ============================================== -->
+    <section id="view-browse" class="view-panel hidden py-8 bg-stone-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Breadcrumb / Header -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-6 border-b border-stone-200 mb-6 gap-3">
+          <div>
+            <h2 class="text-2xl font-extrabold text-stone-900 font-serif">Browse GSB Matrimonial Profiles</h2>
+            <p class="text-xs sm:text-sm text-stone-500">Filter verified Saraswat brides and grooms with horoscope & profession criteria</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-semibold text-stone-500" id="totalProfilesCountBadge">Showing 6 Profiles</span>
+            <button onclick="resetFilters()" class="text-xs bg-stone-200 hover:bg-stone-300 text-stone-700 px-3 py-1.5 rounded-lg transition font-medium">
+              <i class="fa-solid fa-arrows-rotate mr-1"></i> Reset Filters
+            </button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          <aside class="lg:col-span-4 bg-white p-5 rounded-2xl border border-stone-200 shadow-sm space-y-5 sticky top-24">
+            <div class="flex items-center justify-between border-b border-stone-100 pb-3">
+              <h3 class="font-bold text-stone-900 text-base flex items-center gap-2">
+                <i class="fa-solid fa-sliders text-amber-600"></i> Filters & Preferences
+              </h3>
+              <span class="text-[11px] bg-amber-100 text-amber-800 font-bold px-2 py-0.5 rounded">GSB Criteria</span>
+            </div>
+
+            <!-- Gender Toggle -->
+            <div>
+              <label class="block text-xs font-bold text-stone-700 uppercase mb-2 tracking-wider">Seeking</label>
+              <div class="grid grid-cols-3 gap-1.5">
+                <button type="button" onclick="setGenderFilter('All')" class="filter-gender-btn active-filter-btn px-2.5 py-1.5 text-xs font-bold rounded-lg border border-amber-600 bg-amber-50 text-brand-maroon text-center transition" data-val="All">All</button>
+                <button type="button" onclick="setGenderFilter('Bride')" class="filter-gender-btn px-2.5 py-1.5 text-xs font-medium rounded-lg border border-stone-200 hover:bg-stone-50 text-stone-700 text-center transition" data-val="Bride">Brides (ವಧು)</button>
+                <button type="button" onclick="setGenderFilter('Groom')" class="filter-gender-btn px-2.5 py-1.5 text-xs font-medium rounded-lg border border-stone-200 hover:bg-stone-50 text-stone-700 text-center transition" data-val="Groom">Grooms (ವರ)</button>
+              </div>
+            </div>
+
+            <!-- GSB Gothra Filter -->
+            <div>
+              <label class="block text-xs font-bold text-stone-700 uppercase mb-1.5 tracking-wider">GSB Gothra (ಗೋತ್ರ)</label>
+              <select id="filterGothra" onchange="applyFilters()" class="w-full border border-stone-300 rounded-xl px-3 py-2 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none bg-white">
+                <option value="All">All Gothras (ಎಲ್ಲಾ ಗೋತ್ರಗಳು)</option>
+                <option value="Kashyapa">Kashyapa (ಕಶ್ಯಪ)</option>
+                <option value="Bharadwaja">Bharadwaja (ಭಾರದ್ವಾಜ)</option>
+                <option value="Kaushika">Kaushika (ಕೌಶಿಕ)</option>
+                <option value="Vatsa">Vatsa (ವತ್ಸ)</option>
+                <option value="Kaundinya">Kaundinya (ಕೌಂಡಿನ್ಯ)</option>
+                <option value="Atri">Atri (ಅತ್ರಿ)</option>
+                <option value="Jamadagni">Jamadagni (ಜಮದಗ್ನಿ)</option>
+                <option value="Vishwamitra">Vishwamitra (ವಿಶ್ವಾಮಿತ್ರ)</option>
+              </select>
+            </div>
+
+            <!-- Location Filter -->
+            <div>
+              <label class="block text-xs font-bold text-stone-700 uppercase mb-1.5 tracking-wider">Location / Native Place</label>
+              <select id="filterLocation" onchange="applyFilters()" class="w-full border border-stone-300 rounded-xl px-3 py-2 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none bg-white">
+                <option value="All">All Locations</option>
+                <option value="Mangaluru">Mangaluru / DK</option>
+                <option value="Udupi">Udupi / Kundapura</option>
+                <option value="Goa">Goa</option>
+                <option value="Bengaluru">Bengaluru</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Kochi">Kochi</option>
+                <option value="USA">USA / Overseas</option>
+              </select>
+            </div>
+
+            <!-- Education / Profession -->
+            <div>
+              <label class="block text-xs font-bold text-stone-700 uppercase mb-1.5 tracking-wider">Education Level</label>
+              <select id="filterEdu" onchange="applyFilters()" class="w-full border border-stone-300 rounded-xl px-3 py-2 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none bg-white">
+                <option value="All">Any Education</option>
+                <option value="Engineering">Engineering / B.E / B.Tech</option>
+                <option value="Medicine">Doctor / MBBS / MD</option>
+                <option value="CA">Chartered Accountant (CA/CS)</option>
+                <option value="PostGrad">Post Graduate / MBA / MS</option>
+                <option value="Business">Business / Entrepreneur</option>
+              </select>
+            </div>
+
+            <!-- Max Age Slider -->
+            <div>
+              <div class="flex justify-between items-center mb-1">
+                <label class="text-xs font-bold text-stone-700 uppercase tracking-wider">Maximum Age</label>
+                <span id="ageSliderVal" class="text-xs font-bold text-brand-maroon">35 yrs</span>
+              </div>
+              <input type="range" id="filterMaxAge" min="22" max="45" value="35" oninput="updateAgeLabel(this.value); applyFilters();" class="w-full accent-brand-maroon cursor-pointer">
+            </div>
+
+            <!-- Google Photos Available Checkbox -->
+            <div class="pt-2 border-t border-stone-100">
+              <label class="flex items-center gap-2 cursor-pointer select-none text-xs font-semibold text-stone-700">
+                <input type="checkbox" id="filterHasGooglePhotos" onchange="applyFilters()" class="w-4 h-4 rounded text-brand-maroon accent-brand-maroon">
+                <span>With Google Photos Link Only</span>
+              </label>
+            </div>
+          </aside>
+
+          <div class="lg:col-span-8">
+            <div id="profilesGrid" class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <!-- Dynamically rendered via JS -->
+            </div>
+
+            <!-- Empty State Notice -->
+            <div id="noProfilesFound" class="hidden bg-white rounded-2xl p-10 text-center border border-stone-200">
+              <div class="w-16 h-16 bg-amber-50 text-amber-600 rounded-full flex items-center justify-center mx-auto text-2xl mb-3">
+                <i class="fa-solid fa-user-slash"></i>
+              </div>
+              <h3 class="font-bold text-stone-800 text-lg">No matching profiles found</h3>
+              <p class="text-xs text-stone-500 mt-1 max-w-sm mx-auto">Try broadening your Gothra, location, or age range to see more compatible Saraswat matches.</p>
+              <button onclick="resetFilters()" class="mt-4 bg-brand-maroon text-white text-xs font-semibold px-4 py-2 rounded-lg">Reset All Filters</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- VIEW 3: DASHBOARD & MATCHMAKING RECOMMENDATION -->
+    <!-- ============================================== -->
+    <section id="view-dashboard" class="view-panel hidden py-8 bg-stone-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+        
+        <!-- User Status & 6-Month Expiry Banner -->
+        <div class="bg-gradient-to-r from-amber-900 via-stone-900 to-brand-maroon text-white p-6 rounded-2xl shadow-md">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div class="flex items-center gap-4">
+              <div class="w-16 h-16 rounded-full bg-amber-200 border-2 border-amber-400 text-amber-900 flex items-center justify-center text-2xl font-bold font-serif shadow">
+                GP
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h2 class="text-xl font-bold">Gautam Pai</h2>
+                  <span class="bg-emerald-500/20 text-emerald-300 text-[10px] font-bold px-2 py-0.5 rounded-full border border-emerald-400/30">
+                    <i class="fa-solid fa-circle-check mr-1"></i> Active GSB Profile
+                  </span>
+                </div>
+                <p class="text-xs text-stone-300 mt-0.5">Kashyapa Gothra • Rohini Nakshatra • Software Architect, Bengaluru</p>
+                <div class="mt-2 flex items-center gap-3 text-xs text-amber-200">
+                  <span><i class="fa-solid fa-id-card-clip mr-1"></i> ID: GSB-2026-8821</span>
+                  <span>•</span>
+                  <span><i class="fa-solid fa-phone-slash mr-1"></i> Mobile Hidden from Public</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Profile Expiry Card & Free Renew Button -->
+            <div class="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/20 flex flex-col sm:items-end justify-center">
+              <div class="text-xs text-stone-300 font-medium">Profile Validity (6-Month Freshness Policy)</div>
+              <div class="text-lg font-extrabold text-amber-300 flex items-center gap-2 mt-0.5">
+                <i class="fa-regular fa-clock"></i>
+                <span id="expiryCountdown">142 Days Remaining</span>
+              </div>
+              <button onclick="renewProfile()" class="mt-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-stone-900 text-xs font-bold px-3.5 py-1.5 rounded-lg shadow transition flex items-center gap-1.5">
+                <i class="fa-solid fa-rotate"></i> Free 1-Click Renew (Extend 180 Days)
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metric Stat Cards -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="bg-white p-4 rounded-xl border border-stone-200 shadow-xs">
+            <div class="text-xs text-stone-500 font-semibold uppercase">Auto Matches Found</div>
+            <div class="text-2xl font-bold text-stone-900 mt-1">14</div>
+            <div class="text-[11px] text-emerald-600 font-medium mt-0.5">Based on Horoscope & Gothra</div>
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-stone-200 shadow-xs">
+            <div class="text-xs text-stone-500 font-semibold uppercase">Interests Received</div>
+            <div class="text-2xl font-bold text-brand-maroon mt-1">2</div>
+            <div class="text-[11px] text-stone-500 font-medium mt-0.5">Awaiting your response</div>
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-stone-200 shadow-xs">
+            <div class="text-xs text-stone-500 font-semibold uppercase">Interests Sent</div>
+            <div class="text-2xl font-bold text-blue-600 mt-1">3</div>
+            <div class="text-[11px] text-stone-500 font-medium mt-0.5">1 Accepted & Connected</div>
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-stone-200 shadow-xs">
+            <div class="text-xs text-stone-500 font-semibold uppercase">Membership Cost</div>
+            <div class="text-2xl font-bold text-emerald-600 mt-1">₹0</div>
+            <div class="text-[11px] text-stone-500 font-medium mt-0.5">Lifetime Free Promise</div>
+          </div>
+        </div>
+
+        <!-- Dashboard Sub-Tabs -->
+        <div class="bg-white rounded-2xl border border-stone-200 shadow-sm overflow-hidden">
+          <div class="flex border-b border-stone-200 bg-stone-50/70 px-4 pt-3 gap-2 overflow-x-auto">
+            <button onclick="switchDashTab('matches')" id="dashTabBtn-matches" class="dash-tab-btn active-dash-tab px-4 py-2.5 text-xs sm:text-sm font-bold border-b-2 border-brand-maroon text-brand-maroon">
+              <i class="fa-solid fa-wand-magic-sparkles mr-1.5"></i> Smart Matchmaking Algorithm
+            </button>
+            <button onclick="switchDashTab('received')" id="dashTabBtn-received" class="dash-tab-btn px-4 py-2.5 text-xs sm:text-sm font-bold border-b-2 border-transparent text-stone-500 hover:text-stone-800">
+              <i class="fa-solid fa-inbox mr-1.5"></i> Received Interests (2)
+            </button>
+            <button onclick="switchDashTab('sent')" id="dashTabBtn-sent" class="dash-tab-btn px-4 py-2.5 text-xs sm:text-sm font-bold border-b-2 border-transparent text-stone-500 hover:text-stone-800">
+              <i class="fa-solid fa-paper-plane mr-1.5"></i> Sent Interests (3)
+            </button>
+          </div>
+
+          <!-- Sub-Tab Content 1: Smart Matchmaking -->
+          <div id="dashTabContent-matches" class="p-6">
+            <div class="bg-amber-50/80 border border-amber-200 p-4 rounded-xl mb-6 flex items-start gap-3">
+              <div class="text-brand-maroon text-xl mt-0.5">
+                <i class="fa-solid fa-circle-info"></i>
+              </div>
+              <div class="text-xs text-amber-900 leading-relaxed">
+                <strong>GSB Compatibility Logic Active:</strong> Our algorithm automatically filters out identical Gothra (<em>Sagotra</em> caution), verifies compatible Nakshatras according to Saraswat traditions, and prioritizes native Karavali/Goa alignment.
+              </div>
+            </div>
+
+            <div id="algorithmMatchesGrid" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <!-- Dynamically injected -->
+            </div>
+          </div>
+
+          <!-- Sub-Tab Content 2: Received Interests -->
+          <div id="dashTabContent-received" class="p-6 hidden">
+            <div class="space-y-3">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 rounded-xl border border-stone-200 bg-stone-50/50 hover:bg-stone-50 gap-4">
+                <div class="flex items-center gap-3">
+                  <div class="w-12 h-12 rounded-full bg-red-100 text-brand-maroon flex items-center justify-center font-bold text-sm">
+                    SK
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-stone-900 text-sm">Sneha Kamath (26 yrs)</h4>
+                    <p class="text-xs text-stone-500">Chartered Accountant • Vatsa Gothra • Mangaluru</p>
+                    <span class="text-[11px] text-amber-700 bg-amber-100 px-2 py-0.5 rounded font-medium mt-1 inline-block">Expressed interest 2 days ago</span>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2">
+                  <button onclick="acceptInterest('Sneha Kamath', '+91 98450 12345')" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-3 py-2 rounded-lg shadow-sm transition">
+                    <i class="fa-solid fa-check mr-1"></i> Accept & Unlock Phone
+                  </button>
+                  <button onclick="showToast('Interest declined politely.')" class="bg-stone-200 hover:bg-stone-300 text-stone-700 text-xs font-medium px-3 py-2 rounded-lg transition">
+                    Decline
+                  </button>
+                </div>
+              </div>
+
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 rounded-xl border border-stone-200 bg-stone-50/50 hover:bg-stone-50 gap-4">
+                <div class="flex items-center gap-3">
+                  <div class="w-12 h-12 rounded-full bg-blue-100 text-blue-800 flex items-center justify-center font-bold text-sm">
+                    DP
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-stone-900 text-sm">Divya Prabhu (27 yrs)</h4>
+                    <p class="text-xs text-stone-500">Data Scientist • Kaushika Gothra • Bengaluru</p>
+                    <span class="text-[11px] text-amber-700 bg-amber-100 px-2 py-0.5 rounded font-medium mt-1 inline-block">Expressed interest yesterday</span>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2">
+                  <button onclick="acceptInterest('Divya Prabhu', '+91 94801 88992')" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-3 py-2 rounded-lg shadow-sm transition">
+                    <i class="fa-solid fa-check mr-1"></i> Accept & Unlock Phone
+                  </button>
+                  <button onclick="showToast('Interest declined politely.')" class="bg-stone-200 hover:bg-stone-300 text-stone-700 text-xs font-medium px-3 py-2 rounded-lg transition">
+                    Decline
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sub-Tab Content 3: Sent Interests -->
+          <div id="dashTabContent-sent" class="p-6 hidden">
+            <div class="space-y-3">
+              <div class="p-4 rounded-xl border border-stone-200 flex items-center justify-between">
+                <div>
+                  <h4 class="font-bold text-stone-900 text-sm">Ananya Shenoy (26 yrs)</h4>
+                  <p class="text-xs text-stone-500">Doctor (MD) • Udupi</p>
+                  <span class="text-[11px] text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded font-medium mt-1 inline-block">Accepted! Phone Number unlocked</span>
+                </div>
+                <a href="https://wa.me/919880011223?text=Namaskara%20Shenoy%20family,%20regarding%20GSB%20Bandhav%20match..." target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-3 py-2 rounded-lg flex items-center gap-1.5">
+                  <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp Family
+                </a>
+              </div>
+              <div class="p-4 rounded-xl border border-stone-200 flex items-center justify-between bg-stone-50/50">
+                <div>
+                  <h4 class="font-bold text-stone-900 text-sm">Pooja Bhat (25 yrs)</h4>
+                  <p class="text-xs text-stone-500">Software Engineer • Goa</p>
+                  <span class="text-[11px] text-amber-700 bg-amber-100 px-2 py-0.5 rounded font-medium mt-1 inline-block">Request Pending</span>
+                </div>
+                <span class="text-xs text-stone-400 font-medium">Sent on 18 Sep 2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="registerModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4 hidden overflow-y-auto">
+    <div class="bg-white rounded-3xl shadow-2xl border border-amber-200 w-full max-w-2xl my-8 overflow-hidden transform transition-all">
+      
+      <!-- Modal Header -->
+      <div class="bg-gradient-to-r from-brand-maroon via-brand-templeRed to-amber-700 text-white p-5 flex items-center justify-between">
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="text-lg">🪔</span>
+            <h3 class="font-bold text-lg font-serif">GSB Free Profile Registration</h3>
+          </div>
+          <p class="text-xs text-amber-100 mt-0.5">100% Free Lifetime Matrimony for Saraswat Families</p>
+        </div>
+        <button onclick="closeRegisterModal()" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-lg transition">
+          ✕
+        </button>
+      </div>
+
+      <!-- Step Progress Bar -->
+      <div class="bg-stone-50 px-6 py-3 border-b border-stone-200">
+        <div class="flex items-center justify-between text-xs font-bold text-stone-500">
+          <span id="stepLabel-1" class="text-brand-maroon flex items-center gap-1">1. Basic Info</span>
+          <span class="text-stone-300">───</span>
+          <span id="stepLabel-2" class="flex items-center gap-1">2. Education & Career</span>
+          <span class="text-stone-300">───</span>
+          <span id="stepLabel-3" class="flex items-center gap-1">3. GSB Horoscope</span>
+          <span class="text-stone-300">───</span>
+          <span id="stepLabel-4" class="flex items-center gap-1">4. Photos & Privacy</span>
+        </div>
+        <div class="w-full bg-stone-200 h-1.5 rounded-full mt-2.5 overflow-hidden">
+          <div id="stepProgressBar" class="bg-brand-maroon h-full w-1/4 transition-all duration-300"></div>
+        </div>
+      </div>
+
+      <!-- Wizard Form -->
+      <form id="regWizardForm" onsubmit="handleRegistrationSubmit(event)" class="p-6">
+        
+        <!-- STEP 1: Basic Information -->
+        <div id="regStep-1" class="space-y-4">
+          <h4 class="font-bold text-stone-900 text-sm border-b pb-1.5">Step 1: Bride / Groom Personal Details</h4>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-stone-700 mb-1">Full Name (ಹೆಸರು) *</label>
+              <input type="text" id="regName" required placeholder="e.g., Rohit Pai / Sneha Kamath" class="w-full border border-stone-300 rounded-xl px-3 py-2 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-stone-700 mb-1">Profile For *</label>
+              <select id="regProfileFor" class="w-full border border-stone-300 rounded-xl px-3 py-2 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none bg-white">
+                <option value="Self">Self</option>
+                <option value="Son">Son</option>
+                <option value="Daughter">Daughter</option>
+                <option value="Brother">Brother</option>
+                <option value="Sister">Sister</option>
+                <option value="Relative">Relative</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            <div>
+              <label class="block text-xs font-semibold text-stone-700 mb-1">Gender *</label>
+              <select id="regGender" class="w-full border border-stone-300 rounded-xl px-3 py-2 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none bg-white">
+                <option value="Groom">Groom (ಪುರುಷ)</option>
+                <option value="Bride">Bride (ಸ್ತ್ರೀ)</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-stone-700 mb-1">Date of Birth *</label>
+              <input type="date" id="regDob" required value="1998-05-15" class="w-full border border-stone-300 rounded-xl px-3 py-2 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+            </div>
+            <div class="col-span-2 sm:col-span-1">
+              <label class="block text-xs font-semibold text-stone-700 mb-1">Height *</label>
+              <input type="text" id="regHeight" required placeholder="e.g., 5 ft 8 in" class="w-full border border-stone-300 rounded-xl px-3 py-2 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-stone-700 mb-1">Native Place in Karavali/Goa (ಮೂಲ ಊರು) *</label>
+              <input type="text" id="regNative" required placeholder="e.g., Karkala / Kundapura / Panaji" class="w-full border border-stone-300 rounded-xl px-3 py-2 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-stone-700 mb-1">Current Residence City *</label>
+              <input type="text" id="regCity" required placeholder="e.g., Bengaluru / Mumbai / Udupi" class="w-full border border-stone-300 rounded-xl px-3 py-2 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 2: Education & Profession -->
+        <div id="regStep-2" class="space-y-4 hidden">
+          <h4 class="font-bold text-stone-900 text-sm border-b pb-1.5">Step 2: Education & Career Details</h4>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-stone-700 mb-1">Highest Degree / Education (ವಿದ್ಯಾರ್ಹತೆ) *</label>
+              <input type="text" id="regEducation" required placeholder="e.g., B.Tech in CSE / MS / MBBS / CA" class="w-full border border-stone-300 rounded-xl px-3 py-2 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-stone-700 mb-1">College / University</label>
+              <input type="text" id="regCollege" placeholder="e.g., Manipal University / NITK / VTU" class="w-full border border-stone-300 rounded-xl px-3 py-2 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-stone-700 mb-1">Occupation / Job Title (ಉದ್ಯೋಗ) *</label>
+              <input type="text" id="regOccupation" required placeholder="e.g., Senior Software Engineer / Manager" class="w-full border border-stone-300 rounded-xl px-3 py-2 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-stone-700 mb-1">Company / Organization</label>
+              <input type="text" id="regCompany" placeholder="e.g., Infosys / Google / Self-employed" class="w-full border border-stone-300 rounded-xl px-3 py-2 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-stone-700 mb-1">Approx. Annual Package / Income</label>
+            <select id="regIncome" class="w-full border border-stone-300 rounded-xl px-3 py-2 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none bg-white">
+              <option value="6-10 LPA">₹6 - ₹10 Lakhs</option>
+              <option value="10-18 LPA" selected>₹10 - ₹18 Lakhs</option>
+              <option value="18-30 LPA">₹18 - ₹30 Lakhs</option>
+              <option value="30+ LPA">₹30+ Lakhs / NRI Package</option>
+              <option value="Confidential">Keep Confidential</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- STEP 3: GSB Community & Horoscope Details -->
+        <div id="regStep-3" class="space-y-4 hidden">
+          <h4 class="font-bold text-stone-900 text-sm border-b pb-1.5 flex items-center gap-1.5">
+            <span>Step 3: GSB Heritage & Horoscope (ಜಾತಕ ವಿವರ)</span>
+            <span class="text-xs text-amber-700 font-normal">(Crucial for community matching)</span>
+          </h4>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-stone-700 mb-1">GSB Gothra (ಗೋತ್ರ) *</label>
+              <select id="regGothra" required class="w-full border border-stone-300 rounded-xl px-3 py-2 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none bg-white font-medium">
+                <option value="Kashyapa">Kashyapa (ಕಶ್ಯಪ)</option>
+                <option value="Bharadwaja">Bharadwaja (ಭಾರದ್ವಾಜ)</option>
+                <option value="Kaushika">Kaushika (ಕೌಶಿಕ)</option>
+                <option value="Vatsa">Vatsa (ವತ್ಸ)</option>
+                <option value="Kaundinya">Kaundinya (ಕೌಂಡಿನ್ಯ)</option>
+                <option value="Atri">Atri (ಅತ್ರಿ)</option>
+                <option value="Jamadagni">Jamadagni (ಜಮದಗ್ನಿ)</option>
+                <option value="Vishwamitra">Vishwamitra (ವಿಶ್ವಾಮಿತ್ರ)</option>
+                <option value="Gargya">Gargya (ಗಾರ್ಗ್ಯ)</option>
+                <option value="Vasistha">Vasistha (ವಸಿಷ್ಠ)</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-stone-700 mb-1">Kula Devata / Temple (ಕುಲದೇವತಾ) *</label>
+              <input type="text" id="regKuldev" required placeholder="e.g., Shri Shantadurga / Shri Venkatramana / Shri Damodar" class="w-full border border-stone-300 rounded-xl px-3 py-2 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            <div>
+              <label class="block text-xs font-semibold text-stone-700 mb-1">Nakshatra (ನಕ್ಷತ್ರ) *</label>
+              <input type="text" id="regNakshatra" required placeholder="e.g., Rohini / Uttara" class="w-full border border-stone-300 rounded-xl px-3 py-2 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-stone-700 mb-1">Rashi (ರಾಶಿ) *</label>
+              <input type="text" id="regRashi" required placeholder="e.g., Vrishabha / Mithuna" class="w-full border border-stone-300 rounded-xl px-3 py-2 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+            </div>
+            <div class="col-span-2 sm:col-span-1">
+              <label class="block text-xs font-semibold text-stone-700 mb-1">Charana / Paada</label>
+              <select id="regCharana" class="w-full border border-stone-300 rounded-xl px-3 py-2 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none bg-white">
+                <option value="1">1st Paada</option>
+                <option value="2" selected>2nd Paada</option>
+                <option value="3">3rd Paada</option>
+                <option value="4">4th Paada</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-stone-700 mb-1">Family Details (ತಂದೆ, ತಾಯಿ, ಒಡಹುಟ್ಟಿದವರು)</label>
+            <textarea id="regFamily" rows="2" placeholder="Father's profession, Mother's maiden surname/native, number of siblings..." class="w-full border border-stone-300 rounded-xl p-3 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none"></textarea>
+          </div>
+        </div>
+
+        <!-- STEP 4: Google Photos Link & Privacy Options -->
+        <div id="regStep-4" class="space-y-4 hidden">
+          <h4 class="font-bold text-stone-900 text-sm border-b pb-1.5">Step 4: Photos, Contact & Privacy</h4>
+
+          <!-- Google Photo Link Input -->
+          <div class="bg-blue-50/70 border border-blue-200 p-4 rounded-xl space-y-2">
+            <div class="flex items-center gap-2 text-blue-900 font-bold text-xs">
+              <i class="fa-brands fa-google text-blue-600 text-base"></i>
+              <span>Google Photos / Cloud Album Link (No File Upload Needed)</span>
+            </div>
+            <p class="text-[11px] text-blue-800 leading-normal">
+              Instead of uploading large pictures to our server, paste your public or view-only Google Photos Album link or Drive link here. You retain 100% control and can revoke access anytime.
+            </p>
+            <input type="url" id="regGooglePhotosLink" placeholder="https://photos.app.goo.gl/... or drive.google.com/..." class="w-full border border-blue-300 rounded-xl px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none bg-white">
+          </div>
+
+          <!-- Contact Details -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-stone-700 mb-1">Primary WhatsApp Number *</label>
+              <input type="tel" id="regPhone" required placeholder="+91 98450 00000" class="w-full border border-stone-300 rounded-xl px-3 py-2 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-stone-700 mb-1">Email Address</label>
+              <input type="email" id="regEmail" placeholder="yourname@gmail.com" class="w-full border border-stone-300 rounded-xl px-3 py-2 text-sm focus:ring-2 focus:ring-amber-500 focus:outline-none">
+            </div>
+          </div>
+
+          <!-- Privacy Safeguards -->
+          <div class="space-y-2.5 bg-stone-50 p-4 rounded-xl border border-stone-200">
+            <div class="font-bold text-xs text-stone-800">Privacy Safeguards</div>
+            <label class="flex items-center gap-2 cursor-pointer text-xs text-stone-700 select-none">
+              <input type="checkbox" id="regHidePhone" checked class="w-4 h-4 rounded text-brand-maroon accent-brand-maroon">
+              <span><strong>Hide my mobile number</strong> (Only reveal when I accept an interest)</span>
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer text-xs text-stone-700 select-none">
+              <input type="checkbox" id="regAutoExpiryNotice" checked required class="w-4 h-4 rounded text-brand-maroon accent-brand-maroon">
+              <span>I acknowledge my profile is active for <strong>6 months</strong> and can be renewed free anytime.</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Wizard Navigation Buttons -->
+        <div class="flex items-center justify-between pt-6 border-t border-stone-200 mt-6">
+          <button type="button" id="prevStepBtn" onclick="navigateStep(-1)" class="invisible px-4 py-2 rounded-xl text-stone-600 hover:bg-stone-100 font-semibold text-xs sm:text-sm">
+            <i class="fa-solid fa-chevron-left mr-1"></i> Back
+          </button>
+
+          <div class="flex items-center gap-2">
+            <button type="button" id="nextStepBtn" onclick="navigateStep(1)" class="bg-brand-maroon hover:bg-red-900 text-white font-semibold text-xs sm:text-sm px-6 py-2.5 rounded-xl shadow transition">
+              Next Step <i class="fa-solid fa-chevron-right ml-1"></i>
+            </button>
+            <button type="submit" id="submitRegBtn" class="hidden bg-gradient-to-r from-emerald-600 to-teal-700 hover:from-emerald-700 hover:to-teal-800 text-white font-bold text-xs sm:text-sm px-6 py-2.5 rounded-xl shadow transition flex items-center gap-2">
+              <i class="fa-solid fa-check-double"></i> Complete Free Registration
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="profileDetailModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4 hidden overflow-y-auto">
+    <div class="bg-white rounded-3xl shadow-2xl border border-stone-200 w-full max-w-3xl my-8 overflow-hidden transform transition-all">
+      
+      <!-- Modal Hero Cover -->
+      <div class="bg-gradient-to-r from-brand-maroon via-amber-800 to-stone-900 text-white p-6 relative">
+        <button onclick="closeProfileDetailModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center text-white transition">
+          ✕
+        </button>
+
+        <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4">
+          <div id="detailAvatar" class="w-20 h-20 rounded-2xl bg-amber-100 text-brand-maroon border-2 border-amber-400 flex items-center justify-center text-3xl font-serif font-bold shadow-lg">
+            SK
+          </div>
+          <div class="text-center sm:text-left">
+            <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2">
+              <h2 id="detailName" class="text-2xl font-bold font-serif">Sneha Kamath</h2>
+              <span id="detailBadge" class="bg-emerald-500/20 text-emerald-300 text-xs px-2.5 py-0.5 rounded-full border border-emerald-400/30 font-semibold">GSB Bride</span>
+            </div>
+            <p id="detailSubtitle" class="text-sm text-stone-200 mt-1">26 yrs, 5'4" • Chartered Accountant • Mangaluru</p>
+            <div class="flex flex-wrap items-center justify-center sm:justify-start gap-3 text-xs text-amber-200 mt-2">
+              <span id="detailGothraTag"><i class="fa-solid fa-om mr-1"></i> Vatsa Gothra</span>
+              <span>•</span>
+              <span id="detailKuldevTag"><i class="fa-solid fa-place-of-worship mr-1"></i> Shri Shantadurga Kula</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Detail Body Tabs / Information -->
+      <div class="p-6 space-y-6 max-h-[70vh] overflow-y-auto">
+        
+        <!-- Google Photos Album Access Banner -->
+        <div id="detailGooglePhotosBox" class="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 p-4 rounded-2xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center text-lg shadow-sm">
+              <i class="fa-brands fa-google"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-stone-900 text-sm">Google Photos Album Available</h4>
+              <p class="text-xs text-stone-600">The family has shared a protected cloud photo album without server uploads.</p>
+            </div>
+          </div>
+          <a id="detailGooglePhotosBtn" href="#" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold px-4 py-2 rounded-xl transition flex items-center gap-1.5 shadow">
+            <span>View Cloud Photos</span>
+            <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+          </a>
+        </div>
+
+        <!-- 3 Information Columns: Personal & Education, GSB Horoscope, Family -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <!-- Box A: Education & Career -->
+          <div class="bg-stone-50 p-4 rounded-2xl border border-stone-200/80 space-y-3">
+            <h4 class="text-xs font-bold text-brand-maroon uppercase tracking-wider flex items-center gap-1.5 border-b pb-2">
+              <i class="fa-solid fa-briefcase"></i> Education & Career
+            </h4>
+            <div class="text-xs space-y-2 text-stone-700">
+              <div class="flex justify-between"><span class="text-stone-500">Education:</span> <strong id="detailEducation">-</strong></div>
+              <div class="flex justify-between"><span class="text-stone-500">College:</span> <strong id="detailCollege">-</strong></div>
+              <div class="flex justify-between"><span class="text-stone-500">Profession:</span> <strong id="detailProfession">-</strong></div>
+              <div class="flex justify-between"><span class="text-stone-500">Company:</span> <strong id="detailCompany">-</strong></div>
+              <div class="flex justify-between"><span class="text-stone-500">Annual Income:</span> <strong id="detailIncome">-</strong></div>
+            </div>
+          </div>
+
+          <!-- Box B: Horoscope & Astrology Details -->
+          <div class="bg-amber-50/50 p-4 rounded-2xl border border-amber-200/80 space-y-3">
+            <h4 class="text-xs font-bold text-amber-800 uppercase tracking-wider flex items-center gap-1.5 border-b border-amber-200/60 pb-2">
+              <i class="fa-solid fa-sun"></i> GSB Horoscope & Kundali (ಜಾತಕ)
+            </h4>
+            <div class="text-xs space-y-2 text-stone-700">
+              <div class="flex justify-between"><span class="text-stone-500">Gothra:</span> <strong id="detailGothraVal" class="text-brand-maroon">-</strong></div>
+              <div class="flex justify-between"><span class="text-stone-500">Nakshatra:</span> <strong id="detailNakshatraVal">-</strong></div>
+              <div class="flex justify-between"><span class="text-stone-500">Rashi:</span> <strong id="detailRashiVal">-</strong></div>
+              <div class="flex justify-between"><span class="text-stone-500">Paada/Charana:</span> <strong id="detailCharanaVal">-</strong></div>
+              <div class="flex justify-between"><span class="text-stone-500">Kula Devata:</span> <strong id="detailKuldevVal">-</strong></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Box C: Family Background -->
+        <div class="bg-stone-50 p-4 rounded-2xl border border-stone-200/80 space-y-2">
+          <h4 class="text-xs font-bold text-stone-700 uppercase tracking-wider flex items-center gap-1.5 border-b pb-2">
+            <i class="fa-solid fa-people-roof"></i> Family Background & Native Root
+          </h4>
+          <p id="detailFamilyText" class="text-xs text-stone-600 leading-relaxed">
+            -
+          </p>
+        </div>
+
+        <!-- Contact Section with WhatsApp & Phone Privacy Reveal -->
+        <div class="bg-stone-100 p-4 rounded-2xl border border-stone-300 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="text-center sm:text-left">
+            <div class="text-xs font-bold text-stone-900 flex items-center justify-center sm:justify-start gap-1.5">
+              <i class="fa-solid fa-lock text-stone-500"></i> Contact & Direct Communication
+            </div>
+            <div id="detailContactStatus" class="text-xs text-stone-500 mt-0.5">
+              Phone number hidden by candidate until interest accepted.
+            </div>
+          </div>
+
+          <div class="flex items-center gap-2 w-full sm:w-auto">
+            <button id="detailSendInterestBtn" onclick="sendExpressInterestFromModal()" class="flex-1 sm:flex-initial bg-brand-maroon hover:bg-red-900 text-white text-xs font-bold px-4 py-2.5 rounded-xl shadow transition flex items-center justify-center gap-1.5">
+              <i class="fa-solid fa-heart"></i>
+              <span>Send Free Interest</span>
+            </button>
+            <a id="detailWhatsAppBtn" href="#" target="_blank" class="flex-1 sm:flex-initial bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl shadow transition flex items-center justify-center gap-1.5">
+              <i class="fa-brands fa-whatsapp text-sm"></i>
+              <span>WhatsApp Family</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="appToast" class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none">
+    <div class="bg-stone-900 text-white px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-3 border border-stone-700">
+      <div id="toastIcon" class="text-emerald-400 text-lg">
+        <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <div>
+        <div id="toastTitle" class="text-xs font-bold">Success</div>
+        <div id="toastMessage" class="text-xs text-stone-300">Action performed successfully</div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-stone-900 text-stone-400 text-xs border-t border-stone-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        
+        <div class="space-y-3">
+          <div class="flex items-center gap-2 text-white font-serif font-bold text-lg">
+            <span class="text-amber-400">ॐ</span> GSB Bandhav
+          </div>
+          <p class="text-stone-400 text-xs leading-relaxed">
+            A voluntary, non-commercial matrimony portal exclusively for the Gowd Saraswat Brahmin community across the world. No fees, pure service.
+          </p>
+          <div class="text-[11px] text-amber-400/90 font-medium">
+            <i class="fa-solid fa-heart text-red-500 mr-1"></i> Dedicated to Saraswat Youth & Elders
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold mb-3 uppercase tracking-wider text-xs">Community Regions</h4>
+          <ul class="space-y-1.5">
+            <li><a href="#" onclick="applyRegionFilter('Mangaluru')" class="hover:text-amber-400 transition">Dakshina Kannada & Udupi</a></li>
+            <li><a href="#" onclick="applyRegionFilter('Goa')" class="hover:text-amber-400 transition">Goa (Gomantak)</a></li>
+            <li><a href="#" onclick="applyRegionFilter('Kochi')" class="hover:text-amber-400 transition">Kochi & Kerala GSBs</a></li>
+            <li><a href="#" onclick="applyRegionFilter('Mumbai')" class="hover:text-amber-400 transition">Mumbai, Pune & Bengaluru</a></li>
+            <li><a href="#" onclick="applyRegionFilter('USA')" class="hover:text-amber-400 transition">NRI Saraswats (Global)</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold mb-3 uppercase tracking-wider text-xs">Features & Trust</h4>
+          <ul class="space-y-1.5">
+            <li><span class="text-stone-300">100% Lifetime Free (₹0)</span></li>
+            <li><span class="text-stone-300">Google Photos Cloud Sharing</span></li>
+            <li><span class="text-stone-300">Mobile Number Privacy Mask</span></li>
+            <li><span class="text-stone-300">6-Month Automated Refresh</span></li>
+            <li><span class="text-stone-300">Sagotra Warning Engine</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold mb-3 uppercase tracking-wider text-xs">Support & Seva</h4>
+          <p class="text-stone-400 text-xs leading-relaxed mb-3">
+            Managed by volunteers for Samaj Seva. For help or matrimonial consultations, reach our team via WhatsApp.
+          </p>
+          <a href="https://wa.me/919999999999?text=Namaskara,%20I%20need%20help%20with%20GSB%20Bandhav" target="_blank" class="inline-flex items-center gap-2 bg-stone-800 hover:bg-stone-700 text-amber-300 px-3 py-2 rounded-xl border border-stone-700 transition">
+            <i class="fa-brands fa-whatsapp text-emerald-400"></i> Volunteer Helpline
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-8 pt-6 border-t border-stone-800 flex flex-col sm:flex-row items-center justify-between text-[11px] text-stone-500 gap-2">
+        <p>© 2026 GSB Bandhav Matrimony. Built for Saraswat community without commercial intent.</p>
+        <p>Devu Borem Koru • ಸಮಸ್ತ ಸನ್ಮಂಗಳಾನಿ ಭವಂತು</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // State Store
+    let currentTab = 'home';
+    let currentWizardStep = 1;
+    let selectedProfileForModal = null;
+    let genderFilter = 'All';
+
+    // Mock GSB Profiles Database with Authentic Surnames, Gothras & Google Photos Links
+    const INITIAL_PROFILES = [
+      {
+        id: 'GSB-101',
+        name: 'Sneha Kamath',
+        gender: 'Bride',
+        age: 26,
+        height: "5' 4\"",
+        education: 'Chartered Accountant (CA)',
+        college: 'ICAI Bengaluru',
+        profession: 'Senior Financial Analyst',
+        company: 'Deloitte India',
+        income: '₹18 LPA',
+        gothra: 'Vatsa',
+        nakshatra: 'Rohini',
+        rashi: 'Vrishabha (Taurus)',
+        charana: '2',
+        kuldev: 'Shri Shantadurga Temple (Kavlem)',
+        native: 'Mangaluru',
+        city: 'Bengaluru',
+        family: "Father retired Bank Manager (Syndicate Bank), Mother homemaker (Shenoy from Karkala), 1 younger brother working in Dublin.",
+        googlePhotosUrl: 'https://photos.app.goo.gl/mock-album-sneha',
+        phone: '+91 98450 11223',
+        hidePhone: true,
+        daysLeft: 165
+      },
+      {
+        id: 'GSB-102',
+        name: 'Aditya Pai',
+        gender: 'Groom',
+        age: 28,
+        height: "5' 10\"",
+        education: 'B.Tech in Computer Science',
+        college: 'NITK Surathkal',
+        profession: 'Lead Software Engineer',
+        company: 'Amazon Web Services',
+        income: '₹34 LPA',
+        gothra: 'Bharadwaja',
+        nakshatra: 'Uttara Phalguni',
+        rashi: 'Kanya (Virgo)',
+        charana: '3',
+        kuldev: 'Shri Venkatramana Temple (Karkala)',
+        native: 'Udupi',
+        city: 'Bengaluru',
+        family: "Father business owner in Udupi, Mother teacher, elder sister married and settled in California.",
+        googlePhotosUrl: 'https://photos.app.goo.gl/mock-album-aditya',
+        phone: '+91 98801 44556',
+        hidePhone: false,
+        daysLeft: 172
+      },
+      {
+        id: 'GSB-103',
+        name: 'Dr. Shruti Shenoy',
+        gender: 'Bride',
+        age: 27,
+        height: "5' 5\"",
+        education: 'MBBS, MD (Pediatrics)',
+        college: 'KMC Manipal',
+        profession: 'Consultant Pediatrician',
+        company: 'Private Hospital',
+        income: '₹22 LPA',
+        gothra: 'Kaushika',
+        nakshatra: 'Hasta',
+        rashi: 'Kanya (Virgo)',
+        charana: '1',
+        kuldev: 'Shri Mahalasa Narayani (Mardol)',
+        native: 'Kundapura',
+        city: 'Mangaluru',
+        family: "Father Doctor (Surgeon), Mother retired professor (Prabhu family from Mulki), brother pursuing MS in Germany.",
+        googlePhotosUrl: 'https://photos.app.goo.gl/mock-album-shruti',
+        phone: '+91 97410 99882',
+        hidePhone: true,
+        daysLeft: 130
+      },
+      {
+        id: 'GSB-104',
+        name: 'Prathik Nayak',
+        gender: 'Groom',
+        age: 30,
+        height: "5' 11\"",
+        education: 'MS in Data Science',
+        college: 'University of Texas, Dallas',
+        profession: 'AI Research Scientist',
+        company: 'Tech Corp, USA',
+        income: '$135,000 / yr',
+        gothra: 'Kaundinya',
+        nakshatra: 'Anuradha',
+        rashi: 'Vrishchika (Scorpio)',
+        charana: '4',
+        kuldev: 'Shri Damodar Temple (Zambaulim)',
+        native: 'Goa',
+        city: 'USA',
+        family: "Parents settled in Panaji Goa. Traditional respectable family, father Advocate at Goa High Court.",
+        googlePhotosUrl: 'https://photos.app.goo.gl/mock-album-prathik',
+        phone: '+1 469 555 0192',
+        hidePhone: false,
+        daysLeft: 95
+      },
+      {
+        id: 'GSB-105',
+        name: 'Ananya Prabhu',
+        gender: 'Bride',
+        age: 25,
+        height: "5' 3\"",
+        education: 'B.E (E&C)',
+        college: 'RV College of Engineering',
+        profession: 'Product Specialist',
+        company: 'Cisco Systems',
+        income: '₹16 LPA',
+        gothra: 'Atri',
+        nakshatra: 'Ashwini',
+        rashi: 'Mesha (Aries)',
+        charana: '2',
+        kuldev: 'Shri Ramanath Temple (Bandora)',
+        native: 'Kochi',
+        city: 'Bengaluru',
+        family: "Well-known Saraswat family in Kochi. Father merchant exporter, mother homemaker.",
+        googlePhotosUrl: '',
+        phone: '+91 98470 55443',
+        hidePhone: true,
+        daysLeft: 178
+      },
+      {
+        id: 'GSB-106',
+        name: 'Gaurav Bhat',
+        gender: 'Groom',
+        age: 31,
+        height: "5' 9\"",
+        education: 'MBA in Operations',
+        college: 'Symbiosis Pune',
+        profession: 'Supply Chain Operations Lead',
+        company: 'Tata Consumer Products',
+        income: '₹24 LPA',
+        gothra: 'Jamadagni',
+        nakshatra: 'Mrigashirsha',
+        rashi: 'Mithuna (Gemini)',
+        charana: '3',
+        kuldev: 'Shri Nagesh Maharudra (Bandora)',
+        native: 'Udupi',
+        city: 'Mumbai',
+        family: "Family based in Dadar, Mumbai originally from Udupi. Father retired engineer, mother Sanskrit scholar.",
+        googlePhotosUrl: 'https://photos.app.goo.gl/mock-album-gaurav',
+        phone: '+91 98200 33441',
+        hidePhone: false,
+        daysLeft: 110
+      }
+    ];
+
+    // Local profile list
+    let profiles = [...INITIAL_PROFILES];
+
+    function switchTab(tabId) {
+      currentTab = tabId;
+      document.querySelectorAll('.view-panel').forEach(panel => {
+        panel.classList.add('hidden');
+        panel.classList.remove('block');
+      });
+
+      const activeView = document.getElementById(`view-${tabId}`);
+      if (activeView) {
+        activeView.classList.remove('hidden');
+        activeView.classList.add('block');
+      }
+
+      // Update Nav Button Active styling
+      document.querySelectorAll('.nav-btn').forEach(btn => {
+        if (btn.getAttribute('data-target') === tabId) {
+          btn.classList.add('bg-amber-100', 'text-brand-maroon');
+          btn.classList.remove('text-stone-600');
+        } else {
+          btn.classList.remove('bg-amber-100', 'text-brand-maroon');
+          btn.classList.add('text-stone-600');
+        }
+      });
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      if (tabId === 'browse') {
+        renderProfilesGrid(profiles);
+      } else if (tabId === 'dashboard') {
+        renderSmartMatches();
+      }
+    }
+
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
+    }
+
+    // Dashboard Sub-Tabs
+    function switchDashTab(subTab) {
+      ['matches', 'received', 'sent'].forEach(tab => {
+        const content = document.getElementById(`dashTabContent-${tab}`);
+        const btn = document.getElementById(`dashTabBtn-${tab}`);
+        if (content) content.classList.add('hidden');
+        if (btn) {
+          btn.classList.remove('border-brand-maroon', 'text-brand-maroon');
+          btn.classList.add('border-transparent', 'text-stone-500');
+        }
+      });
+
+      const targetContent = document.getElementById(`dashTabContent-${subTab}`);
+      const targetBtn = document.getElementById(`dashTabBtn-${subTab}`);
+      if (targetContent) targetContent.classList.remove('hidden');
+      if (targetBtn) {
+        targetBtn.classList.remove('border-transparent', 'text-stone-500');
+        targetBtn.classList.add('border-brand-maroon', 'text-brand-maroon');
+      }
+    }
+
+    function renderProfilesGrid(items) {
+      const container = document.getElementById('profilesGrid');
+      const emptyState = document.getElementById('noProfilesFound');
+      const countBadge = document.getElementById('totalProfilesCountBadge');
+
+      if (!container) return;
+      container.innerHTML = '';
+      countBadge.textContent = `Showing ${items.length} Profiles`;
+
+      if (items.length === 0) {
+        emptyState.classList.remove('hidden');
+        return;
+      } else {
+        emptyState.classList.add('hidden');
+      }
+
+      items.forEach(p => {
+        const initials = p.name.split(' ').map(n => n[0]).join('').substring(0, 2);
+        const isBride = p.gender === 'Bride';
+
+        const card = document.createElement('div');
+        card.className = "bg-white rounded-2xl border border-stone-200/90 shadow-xs hover:shadow-md transition-all duration-200 p-5 flex flex-col justify-between";
+
+        card.innerHTML = `
+          <div>
+            <!-- Header Badge & Status -->
+            <div class="flex items-center justify-between pb-3 border-b border-stone-100">
+              <span class="text-[11px] font-bold px-2.5 py-0.5 rounded-full ${isBride ? 'bg-rose-50 text-rose-800 border border-rose-200' : 'bg-blue-50 text-blue-800 border border-blue-200'}">
+                ${isBride ? '👰 GSB Bride (ವಧು)' : '🤵 GSB Groom (ವರ)'}
+              </span>
+              <span class="text-[11px] text-stone-500 font-medium">
+                <i class="fa-regular fa-clock text-amber-600"></i> ${p.daysLeft}d left
+              </span>
+            </div>
+
+            <!-- Profile Info Row -->
+            <div class="flex items-start gap-3.5 mt-4">
+              <div class="w-14 h-14 rounded-2xl ${isBride ? 'bg-amber-100 text-brand-maroon' : 'bg-stone-100 text-stone-800'} flex-shrink-0 flex items-center justify-center font-serif text-lg font-bold shadow-inner border border-amber-200">
+                ${initials}
+              </div>
+              <div class="flex-grow">
+                <h3 class="font-bold text-stone-900 text-base leading-tight">${p.name}</h3>
+                <p class="text-xs text-stone-500 font-medium mt-0.5">${p.age} yrs • ${p.height} • ${p.city}</p>
+                <p class="text-xs font-semibold text-brand-maroon mt-1 truncate">${p.education}</p>
+              </div>
+            </div>
+
+            <!-- Saraswat Details Tags -->
+            <div class="mt-4 pt-3 border-t border-stone-100 space-y-1.5 text-xs text-stone-600">
+              <div class="flex items-center justify-between">
+                <span class="text-stone-400">Gothra:</span>
+                <span class="font-bold text-stone-800">${p.gothra}</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-stone-400">Nakshatra:</span>
+                <span class="font-medium text-stone-800">${p.nakshatra} (${p.rashi.split(' ')[0]})</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-stone-400">Native Place:</span>
+                <span class="font-medium text-stone-800">${p.native}</span>
+              </div>
+            </div>
+
+            <!-- Google Photos Link Tag -->
+            <div class="mt-3">
+              ${p.googlePhotosUrl ? `
+                <a href="${p.googlePhotosUrl}" target="_blank" class="inline-flex items-center gap-1.5 text-[11px] text-blue-700 bg-blue-50 hover:bg-blue-100 font-semibold px-2.5 py-1 rounded-lg transition border border-blue-200/80">
+                  <i class="fa-brands fa-google"></i> Google Photos Link Attached
+                </a>
+              ` : `
+                <span class="inline-flex items-center gap-1.5 text-[11px] text-stone-400 bg-stone-50 px-2.5 py-1 rounded-lg">
+                  <i class="fa-regular fa-image"></i> Photos upon request
+                </span>
+              `}
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="mt-5 pt-3 border-t border-stone-100 flex items-center gap-2">
+            <button onclick="openProfileModal('${p.id}')" class="flex-1 bg-stone-100 hover:bg-stone-200 text-stone-800 font-bold text-xs py-2 rounded-xl transition">
+              Full Biodata
+            </button>
+            <button onclick="sendExpressInterest('${p.name}')" class="flex-1 bg-brand-maroon hover:bg-red-900 text-white font-bold text-xs py-2 rounded-xl shadow-xs transition flex items-center justify-center gap-1">
+              <i class="fa-solid fa-heart text-amber-300"></i> Interest
+            </button>
+          </div>
+        `;
+
+        container.appendChild(card);
+      });
+    }
+
+    function setGenderFilter(val) {
+      genderFilter = val;
+      document.querySelectorAll('.filter-gender-btn').forEach(b => {
+        if (b.getAttribute('data-val') === val) {
+          b.classList.add('active-filter-btn', 'bg-amber-50', 'border-amber-600', 'text-brand-maroon');
+          b.classList.remove('border-stone-200', 'text-stone-700');
+        } else {
+          b.classList.remove('active-filter-btn', 'bg-amber-50', 'border-amber-600', 'text-brand-maroon');
+          b.classList.add('border-stone-200', 'text-stone-700');
+        }
+      });
+      applyFilters();
+    }
+
+    function updateAgeLabel(val) {
+      document.getElementById('ageSliderVal').textContent = `${val} yrs`;
+    }
+
+    function applyFilters() {
+      const gothra = document.getElementById('filterGothra').value;
+      const location = document.getElementById('filterLocation').value;
+      const education = document.getElementById('filterEdu').value;
+      const maxAge = parseInt(document.getElementById('filterMaxAge').value, 10);
+      const googlePhotosOnly = document.getElementById('filterHasGooglePhotos').checked;
+
+      const filtered = profiles.filter(p => {
+        // Gender
+        if (genderFilter !== 'All' && p.gender !== genderFilter) return false;
+        // Age
+        if (p.age > maxAge) return false;
+        // Gothra
+        if (gothra !== 'All' && p.gothra !== gothra) return false;
+        // Location
+        if (location !== 'All') {
+          const matchLoc = p.city.toLowerCase().includes(location.toLowerCase()) || p.native.toLowerCase().includes(location.toLowerCase());
+          if (!matchLoc) return false;
+        }
+        // Education
+        if (education !== 'All') {
+          const eduMatch = p.education.toLowerCase().includes(education.toLowerCase()) || (education === 'PostGrad' && (p.education.includes('MS') || p.education.includes('MBA')));
+          if (!eduMatch) return false;
+        }
+        // Google photos
+        if (googlePhotosOnly && !p.googlePhotosUrl) return false;
+
+        return true;
+      });
+
+      renderProfilesGrid(filtered);
+    }
+
+    function resetFilters() {
+      genderFilter = 'All';
+      setGenderFilter('All');
+      document.getElementById('filterGothra').value = 'All';
+      document.getElementById('filterLocation').value = 'All';
+      document.getElementById('filterEdu').value = 'All';
+      document.getElementById('filterMaxAge').value = 35;
+      document.getElementById('ageSliderVal').textContent = '35 yrs';
+      document.getElementById('filterHasGooglePhotos').checked = false;
+      renderProfilesGrid(profiles);
+      showToast('Filters reset to default.');
+    }
+
+    function handleQuickSearch(e) {
+      e.preventDefault();
+      const gender = document.querySelector('input[name="quickGender"]:checked').value;
+      const gothra = document.getElementById('quickGothra').value;
+      const loc = document.getElementById('quickLocation').value;
+      const minAge = parseInt(document.getElementById('quickAgeMin').value, 10) || 20;
+      const maxAge = parseInt(document.getElementById('quickAgeMax').value, 10) || 40;
+
+      switchTab('browse');
+
+      // Set browse filters
+      setGenderFilter(gender);
+      if (gothra !== 'All') document.getElementById('filterGothra').value = gothra;
+      if (loc !== 'All') document.getElementById('filterLocation').value = loc;
+      document.getElementById('filterMaxAge').value = maxAge;
+      updateAgeLabel(maxAge);
+
+      applyFilters();
+    }
+
+    function applyRegionFilter(region) {
+      switchTab('browse');
+      document.getElementById('filterLocation').value = region;
+      applyFilters();
+    }
+
+    function openProfileModal(profileId) {
+      const p = profiles.find(item => item.id === profileId);
+      if (!p) return;
+      selectedProfileForModal = p;
+
+      document.getElementById('detailName').textContent = p.name;
+      document.getElementById('detailAvatar').textContent = p.name.split(' ').map(n => n[0]).join('').substring(0, 2);
+      document.getElementById('detailBadge').textContent = p.gender === 'Bride' ? '👰 GSB Bride' : '🤵 GSB Groom';
+      document.getElementById('detailSubtitle').textContent = `${p.age} yrs, ${p.height} • ${p.profession} • ${p.city}`;
+      document.getElementById('detailGothraTag').innerHTML = `<i class="fa-solid fa-om mr-1"></i> ${p.gothra} Gothra`;
+      document.getElementById('detailKuldevTag').innerHTML = `<i class="fa-solid fa-place-of-worship mr-1"></i> ${p.kuldev}`;
+
+      // Education & Career
+      document.getElementById('detailEducation').textContent = p.education;
+      document.getElementById('detailCollege').textContent = p.college || 'Reputed Institute';
+      document.getElementById('detailProfession').textContent = p.profession;
+      document.getElementById('detailCompany').textContent = p.company || 'Private Firm';
+      document.getElementById('detailIncome').textContent = p.income;
+
+      // Horoscope
+      document.getElementById('detailGothraVal').textContent = p.gothra;
+      document.getElementById('detailNakshatraVal').textContent = p.nakshatra;
+      document.getElementById('detailRashiVal').textContent = p.rashi;
+      document.getElementById('detailCharanaVal').textContent = `${p.charana}th Paada`;
+      document.getElementById('detailKuldevVal').textContent = p.kuldev;
+
+      // Family
+      document.getElementById('detailFamilyText').textContent = p.family || "Traditional Saraswat family with good cultural standing.";
+
+      // Google Photos Link
+      const gBox = document.getElementById('detailGooglePhotosBox');
+      const gBtn = document.getElementById('detailGooglePhotosBtn');
+      if (p.googlePhotosUrl) {
+        gBox.classList.remove('hidden');
+        gBtn.href = p.googlePhotosUrl;
+      } else {
+        gBox.classList.add('hidden');
+      }
+
+      // Contact Status
+      const contactStatus = document.getElementById('detailContactStatus');
+      const waBtn = document.getElementById('detailWhatsAppBtn');
+      if (p.hidePhone) {
+        contactStatus.innerHTML = `<span class="text-amber-700 font-semibold"><i class="fa-solid fa-lock mr-1"></i> Phone masked for privacy.</span> Send interest to unlock WhatsApp number.`;
+        waBtn.classList.add('opacity-50', 'pointer-events-none');
+        waBtn.setAttribute('title', 'Unlock upon mutual request acceptance');
+      } else {
+        contactStatus.innerHTML = `<span class="text-emerald-700 font-semibold"><i class="fa-solid fa-phone mr-1"></i> Direct Contact: ${p.phone}</span>`;
+        waBtn.classList.remove('opacity-50', 'pointer-events-none');
+        const encodedMsg = encodeURIComponent(`Namaskara, we saw ${p.name}'s profile on GSB Bandhav Matrimony and would like to respectfully connect regarding a proposal.`);
+        waBtn.href = `https://wa.me/${p.phone.replace(/[^0-9]/g, '')}?text=${encodedMsg}`;
+      }
+
+      document.getElementById('profileDetailModal').classList.remove('hidden');
+    }
+
+    function closeProfileDetailModal() {
+      document.getElementById('profileDetailModal').classList.add('hidden');
+      selectedProfileForModal = null;
+    }
+
+    function sendExpressInterestFromModal() {
+      if (selectedProfileForModal) {
+        sendExpressInterest(selectedProfileForModal.name);
+      }
+    }
+
+    function sendExpressInterest(name) {
+      showToast(`Express interest sent to ${name}'s family! They have been notified for free.`);
+    }
+
+    function openRegisterModal() {
+      currentWizardStep = 1;
+      updateWizardUI();
+      document.getElementById('registerModal').classList.remove('hidden');
+    }
+
+    function closeRegisterModal() {
+      document.getElementById('registerModal').classList.add('hidden');
+    }
+
+    function navigateStep(direction) {
+      // Basic validation for step 1
+      if (direction === 1 && currentWizardStep === 1) {
+        const name = document.getElementById('regName').value.trim();
+        const height = document.getElementById('regHeight').value.trim();
+        const native = document.getElementById('regNative').value.trim();
+        const city = document.getElementById('regCity').value.trim();
+        if (!name || !height || !native || !city) {
+          showToast('Please fill all required personal fields.');
+          return;
+        }
+      }
+
+      // Basic validation for step 2
+      if (direction === 1 && currentWizardStep === 2) {
+        const edu = document.getElementById('regEducation').value.trim();
+        const occ = document.getElementById('regOccupation').value.trim();
+        if (!edu || !occ) {
+          showToast('Please fill your education and occupation.');
+          return;
+        }
+      }
+
+      // Basic validation for step 3
+      if (direction === 1 && currentWizardStep === 3) {
+        const kul = document.getElementById('regKuldev').value.trim();
+        const nak = document.getElementById('regNakshatra').value.trim();
+        const ras = document.getElementById('regRashi').value.trim();
+        if (!kul || !nak || !ras) {
+          showToast('Please fill GSB Gothra, Kuldevata and Nakshatra.');
+          return;
+        }
+      }
+
+      currentWizardStep += direction;
+      if (currentWizardStep < 1) currentWizardStep = 1;
+      if (currentWizardStep > 4) currentWizardStep = 4;
+
+      updateWizardUI();
+    }
+
+    function updateWizardUI() {
+      // Hide all steps
+      for (let i = 1; i <= 4; i++) {
+        const stepEl = document.getElementById(`regStep-${i}`);
+        const labelEl = document.getElementById(`stepLabel-${i}`);
+        if (stepEl) {
+          if (i === currentWizardStep) {
+            stepEl.classList.remove('hidden');
+          } else {
+            stepEl.classList.add('hidden');
+          }
+        }
+        if (labelEl) {
+          if (i <= currentWizardStep) {
+            labelEl.classList.add('text-brand-maroon');
+            labelEl.classList.remove('text-stone-400');
+          } else {
+            labelEl.classList.remove('text-brand-maroon');
+            labelEl.classList.add('text-stone-400');
+          }
+        }
+      }
+
+      // Update progress bar
+      const progressPercent = (currentWizardStep / 4) * 100;
+      document.getElementById('stepProgressBar').style.width = `${progressPercent}%`;
+
+      // Buttons
+      const prevBtn = document.getElementById('prevStepBtn');
+      const nextBtn = document.getElementById('nextStepBtn');
+      const submitBtn = document.getElementById('submitRegBtn');
+
+      if (currentWizardStep === 1) {
+        prevBtn.classList.add('invisible');
+      } else {
+        prevBtn.classList.remove('invisible');
+      }
+
+      if (currentWizardStep === 4) {
+        nextBtn.classList.add('hidden');
+        submitBtn.classList.remove('hidden');
+      } else {
+        nextBtn.classList.remove('hidden');
+        submitBtn.classList.add('hidden');
+      }
+    }
+
+    function handleRegistrationSubmit(e) {
+      e.preventDefault();
+
+      const phone = document.getElementById('regPhone').value.trim();
+      if (!phone) {
+        showToast('Please enter your WhatsApp contact number.');
+        return;
+      }
+
+      const newProfile = {
+        id: `GSB-${Date.now().toString().slice(-4)}`,
+        name: document.getElementById('regName').value.trim(),
+        gender: document.getElementById('regGender').value,
+        age: 26,
+        height: document.getElementById('regHeight').value.trim(),
+        education: document.getElementById('regEducation').value.trim(),
+        college: document.getElementById('regCollege').value.trim() || 'Reputed University',
+        profession: document.getElementById('regOccupation').value.trim(),
+        company: document.getElementById('regCompany').value.trim() || 'Private Firm',
+        income: document.getElementById('regIncome').value,
+        gothra: document.getElementById('regGothra').value,
+        nakshatra: document.getElementById('regNakshatra').value.trim(),
+        rashi: document.getElementById('regRashi').value.trim(),
+        charana: document.getElementById('regCharana').value,
+        kuldev: document.getElementById('regKuldev').value.trim(),
+        native: document.getElementById('regNative').value.trim(),
+        city: document.getElementById('regCity').value.trim(),
+        family: document.getElementById('regFamily').value.trim() || 'Respectable GSB Family.',
+        googlePhotosUrl: document.getElementById('regGooglePhotosLink').value.trim(),
+        phone: phone,
+        hidePhone: document.getElementById('regHidePhone').checked,
+        daysLeft: 180 // New 6-month validity
+      };
+
+      // Add to beginning of profiles list
+      profiles.unshift(newProfile);
+
+      closeRegisterModal();
+      showToast('🎉 Free Profile Registered! Active for 6 months with Google Photos support.');
+
+      // Switch to browse to see newly created listing
+      switchTab('browse');
+    }
+
+    function renderSmartMatches() {
+      const container = document.getElementById('algorithmMatchesGrid');
+      if (!container) return;
+      container.innerHTML = '';
+
+      // Mock user context: Gautam Pai (Kashyapa Gothra, Looking for Bride)
+      const userGothra = 'Kashyapa';
+
+      // Find compatible profiles: Not the same gothra (Sagotra avoidance!)
+      const matches = profiles.filter(p => p.gender === 'Bride' && p.gothra !== userGothra);
+
+      matches.slice(0, 4).forEach(m => {
+        const item = document.createElement('div');
+        item.className = "p-4 rounded-xl border border-stone-200 bg-white hover:border-amber-400 transition flex items-start justify-between gap-3 shadow-xs";
+
+        item.innerHTML = `
+          <div class="flex items-start gap-3">
+            <div class="w-12 h-12 rounded-xl bg-amber-50 text-brand-maroon flex items-center justify-center font-bold text-sm border border-amber-200 flex-shrink-0">
+              ${m.name.split(' ').map(n=>n[0]).join('')}
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <h4 class="font-bold text-stone-900 text-sm">${m.name}</h4>
+                <span class="text-[10px] bg-emerald-100 text-emerald-800 font-bold px-1.5 py-0.2 rounded">94% Match</span>
+              </div>
+              <p class="text-xs text-stone-500">${m.age} yrs • ${m.profession} • ${m.city}</p>
+              <div class="mt-1 text-[11px] text-stone-600">
+                <span class="font-semibold text-brand-maroon">${m.gothra} Gothra</span> • Nakshatra: ${m.nakshatra}
+              </div>
+            </div>
+          </div>
+          <button onclick="openProfileModal('${m.id}')" class="text-xs bg-amber-50 hover:bg-amber-100 text-brand-maroon font-bold px-3 py-1.5 rounded-lg transition whitespace-nowrap">
+            View
+          </button>
+        `;
+        container.appendChild(item);
+      });
+    }
+
+    function acceptInterest(name, phone) {
+      showToast(`Interest accepted! ${name}'s contact: ${phone}`);
+      const btnBadge = document.getElementById('requestsCountBadge');
+      if (btnBadge) btnBadge.textContent = '1';
+    }
+
+    function renewProfile() {
+      const countdown = document.getElementById('expiryCountdown');
+      countdown.textContent = '180 Days Remaining';
+      showToast('Profile renewed free for another 6 months!');
+    }
+
+    function showToast(message) {
+      const toast = document.getElementById('appToast');
+      const msgEl = document.getElementById('toastMessage');
+      if (!toast || !msgEl) return;
+
+      msgEl.textContent = message;
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-24', 'opacity-0');
+      }, 3500);
+    }
+
+    window.onload = function() {
+      renderProfilesGrid(profiles);
+      renderSmartMatches();
+    };
+  </script>
+</body>
+</html>
